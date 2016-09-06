@@ -1,0 +1,36 @@
+/* Main stylesheet for Random Wisdom Machine
+Author: Rachelle Wood
+Date: Sept, 2016 */
+
+/* GENERAL STYLES */
+
+* {
+  box-sizing:border-box;
+  font-family: 'Cormorant Upright', serif;
+  background: url('http://vignette1.wikia.nocookie.net/total-roleplay-drama/images/4/48/Parchment.png/revision/latest?cb=20150606022355') no-repeat center fixed;
+  background-size: cover;
+}
+
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 38px;
+}
+
+p {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+
+
+/* HEADER STYLES */
+
+.header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+
+
+/* MAIN CONTENT STYLES */
