@@ -34,3 +34,32 @@ p {
 
 
 /* MAIN CONTENT STYLES */
+
+.main-content {
+  text-align: center;
+}
+
+.main-content p {
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 10px 5px;
+  background-color: #800000;
+  color: #fff;
+  font-size: 20px;
+  border: 0;
+}
+
+.btn:visited {
+  background-color: #800000;
+}
+
+.btn:hover {
+  background-color: #CD5C5C;
+}
+
+.btn:active {
+  padding: 12px 7px;
+}
