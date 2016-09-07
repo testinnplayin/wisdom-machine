@@ -47,10 +47,10 @@ p {
 .btn {
   padding: 10px 5px;
   background-color: #800000;
-  color: #fff;
   font-size: 20px;
   border: 0;
 }
+
 
 .btn:visited {
   background-color: #800000;
@@ -60,6 +60,23 @@ p {
   background-color: #CD5C5C;
 }
 
+.btn:focus {
+  background-color: #DC143C;
+}
+
 .btn:active {
   padding: 12px 7px;
+}
+
+.btn,
+.btn:visited,
+.btn:hover,
+.btn:focus,
+.btn:active {
+  color: #fff;
+}
+
+.quote-container {
+  padding-top: 10px;
+  margin-top: 20px;
 }
