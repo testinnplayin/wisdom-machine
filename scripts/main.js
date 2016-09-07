@@ -7,11 +7,10 @@ $(document).ready(function() {
     $('.quote-container').empty();
     $.ajax({
       type: 'GET',
-      url: 'http://quotes.stormconsultancy.co.uk/quotes.json',
+      url: 'http://quotes.stormconsultancy.co.uk/random.json',
       dataType: 'jsonp',
       success:function(data) {
-        var post = data.shift(); //grabs first post in the array
-        $('.quote-container').append("<p>" + post.quote + "</p><br>" + "<p> - " + post.author + "</p>");
+        $('.quote-container').append("<p>" + data.quote + "</p><br>" + "<p> - " + data.author + "</p>");
       },
       cache: false
     });
