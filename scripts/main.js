@@ -9,7 +9,7 @@ $(document).ready(function() {
       type: 'GET',
       url: 'http://quotes.stormconsultancy.co.uk/random.json',
       dataType: 'jsonp',
-      success:function(data) {
+      success: function(data) {
         $('.quote-container').append("<p>" + data.quote + "</p><br>" + "<p> - " + data.author + "</p>");
       },
       cache: false
