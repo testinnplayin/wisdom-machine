@@ -11,10 +11,13 @@ $(document).ready(function() {
       dataType: 'jsonp',
       success: function(data) {
         $('.quote-container').append("<p>" + data.quote + "</p><br>" + "<p> - " + data.author + "</p>");
+        $('#twt').attr('href', "https://twitter.com/intent/tweet?text=" + data.quote)
+          .attr('class', 'twitter-share-button');
+          twttr.widgets.load();
       },
-      cache: false
+      error: function() {
+        $('.quote-container').append("<p>There has been a problem retrieving your snippet of wisdom.</p>");
+      }
     });
   });
-
-
 });
